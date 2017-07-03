@@ -11,14 +11,13 @@ else if ((n2 > n1)  && (n2  > n3)   )
 } else {  console.log("maximo: " + n3 + "\n" + "minimo: " + n1);
 }
 //ejercicio2
-var o = [];
-var arreglo  = [1,2,3,4,5,6];
-for (var i in arreglo) {
-  if ( (arreglo[i] % 2) == 0 )
-    {
-  console.log( "Elementos en posicion par: " +o.push(i) );
-}
-}
+ar esPar = []; 
+var esImpar = []; 
+var array  = [1,2,3,4,5,6];
+esPar = array.filter(function(n){return n%2 == 0;});
+esImpar = array.filter(function(n){return n%2 == 1;});
+document.write("Elementos pares " + esPar + '<br>' + "Elementos inpares " + esImpar + '<br>');
+
 //ejercicio3
 var arre= [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 var x = arre.reverse();
